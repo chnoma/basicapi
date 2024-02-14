@@ -54,8 +54,6 @@ func main() {
 	e := echo.New()
 	server.setup_order_data_routes(e)
 	server.setup_product_data_routes(e)
-	server.setup_order_hypermedia_routes(e)
-	server.setup_product_hypermedia_routes(e)
 
 	e.Logger.Fatal(e.Start(":8000"))
 }
